@@ -1,26 +1,12 @@
 import "./style.css";
 
-// Wrap everything inside DOMContentLoaded to be safe
-document.addEventListener("DOMContentLoaded", () => {
-  // Code vs Image toggle
-  const codeBlock = document.getElementById("code-block") as HTMLElement;
-  const imageBlock = document.getElementById("image-block") as HTMLElement;
-  const toggleBtn = document.getElementById("toggle-btn") as HTMLButtonElement;
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-  let showingCode = true;
-
-  if (toggleBtn && codeBlock && imageBlock) {
-    toggleBtn.addEventListener("click", () => {
-      showingCode = !showingCode;
-      if (showingCode) {
-        codeBlock.classList.remove("hidden");
-        imageBlock.classList.add("hidden");
-      } else {
-        codeBlock.classList.add("hidden");
-        imageBlock.classList.remove("hidden");
-      }
-    });
-  }
+AOS.init({
+  duration: 800,
+  easing: "ease-in-out",
+  once: false,
 });
 
 function toggleMenu() {

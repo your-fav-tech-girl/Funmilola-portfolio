@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "typescript": "~5.8.3",
     "vite": "^7.1.2"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
+    "aos": "^2.3.4",
     "tailwindcss": "^4.1.13"
   }
 }
