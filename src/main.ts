@@ -2,6 +2,17 @@ import "./style.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Typed from "typed.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  new Typed("#typewriter", {
+    strings: ["dev.portfolio"],
+    typeSpeed: 100, // typing speed
+    backSpeed: 50, // backspacing speed
+    loop: true, // repeat forever
+    backDelay: 1500, // pause before deleting
+  });
+});
 
 AOS.init({
   duration: 800,
