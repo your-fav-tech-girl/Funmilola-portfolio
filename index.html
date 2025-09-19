@@ -329,8 +329,6 @@
     </section>
 
     <!-- Tech Stack Section -->
-
-    <!-- Tech Stack Section -->
     <section data-aos="fade-down" id="stacks" class="py-20 bg-[--dark]">
       <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
         <h2
@@ -449,32 +447,40 @@
     </section>
 
     <!-- Projects Section -->
-    <section data-aos="zoom-in" id="projects" class="py-20 bg-[var(--dark)]">
+    <section id="projects" class="py-20 bg-[var(--dark)]">
       <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
         <h2
           class="text-3xl md:text-4xl font-bold mb-12 text-gray-900 dark:text-white text-center"
+          data-aos="fade-down"
         >
           Featured Projects
         </h2>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div
+          class="grid gap-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+        >
           <!-- Project 1 -->
-          <div class="relative group rounded-md overflow-hidden shadow-lg">
+          <div
+            tabindex="0"
+            class="relative group rounded-md overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="/assets/20250722_215116.jpg"
               alt="SkillConnect Project"
               class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div
-              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-center items-center text-center px-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500"
             >
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
-                  class="px-2 py-1 bg-green-100/30 text-green-500 border border-green-200 rounded text-xs font-medium"
+                  class="px-2 py-1 bg-green-100/30 text-white border border-green-200 rounded text-xs font-medium"
                   >Tailwind</span
                 >
                 <span
-                  class="px-2 py-1 bg-green-100/30 text-green-500 border border-green-200 rounded text-xs font-medium"
+                  class="px-2 py-1 bg-green-100/30 text-white border border-green-200 rounded text-xs font-medium"
                   >React + Vite</span
                 >
               </div>
@@ -488,13 +494,13 @@
                 <a
                   href="https://skillconn.vercel.app/"
                   target="_blank"
-                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:bg-[#00b894] transition"
+                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:scale-105 hover:shadow-lg transition-transform duration-300"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/your-fav-tech-girl/skillconn.git"
                   target="_blank"
-                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 transition"
+                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 hover:scale-105 transition-transform duration-300"
                   >GitHub</a
                 >
               </div>
@@ -502,14 +508,19 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="relative group rounded-md overflow-hidden shadow-lg">
+          <div
+            tabindex="0"
+            class="relative group rounded-md overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               src="/assets/20250915_195256.jpg"
               alt="Todo App Project"
               class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div
-              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-center items-center text-center px-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500"
             >
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
@@ -538,13 +549,13 @@
                 <a
                   href="https://todo-app-exam-project.vercel.app/"
                   target="_blank"
-                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:bg-[#00b894] transition"
+                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:scale-105 hover:shadow-lg transition-transform duration-300"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/your-fav-tech-girl/Todo-App-Exam-Project.git"
                   target="_blank"
-                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 transition"
+                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 hover:scale-105 transition-transform duration-300"
                   >GitHub</a
                 >
               </div>
@@ -552,14 +563,19 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="relative group rounded-md overflow-hidden shadow-lg">
+          <div
+            tabindex="0"
+            class="relative group rounded-md overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="/assets/20250915_195039.jpg"
               alt="Space Tourism Project"
               class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div
-              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-center items-center text-center px-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500"
             >
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
@@ -582,13 +598,13 @@
                 <a
                   href="https://space-task-vwak.vercel.app/"
                   target="_blank"
-                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:bg-[#00b894] transition"
+                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:scale-105 hover:shadow-lg transition-transform duration-300"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/your-fav-tech-girl/space-task.git"
                   target="_blank"
-                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 transition"
+                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 hover:scale-105 transition-transform duration-300"
                   >GitHub</a
                 >
               </div>
@@ -596,14 +612,19 @@
           </div>
 
           <!-- Project 4 -->
-          <div class="relative group rounded-md overflow-hidden shadow-lg">
+          <div
+            tabindex="0"
+            class="relative group rounded-md overflow-hidden shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <img
               src="/assets/ooo.jpg"
               alt="Cart Functionality Project"
               class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div
-              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-center items-center text-center px-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500"
             >
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
@@ -626,13 +647,13 @@
                 <a
                   href="https://e-comm-cart-tawny.vercel.app/"
                   target="_blank"
-                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:bg-[#00b894] transition"
+                  class="px-4 py-2 bg-[#00d4aa] text-white text-sm rounded-md shadow hover:scale-105 hover:shadow-lg transition-transform duration-300"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/your-fav-tech-girl/e-comm-cart.git"
                   target="_blank"
-                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 transition"
+                  class="px-4 py-2 border border-gray-400 text-white text-sm rounded-md hover:bg-gray-700 hover:scale-105 transition-transform duration-300"
                   >GitHub</a
                 >
               </div>
