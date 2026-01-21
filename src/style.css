@@ -8,7 +8,60 @@
   --light-gray: #666;
   --code-bg: #1e1e1e;
   --code-text: #d4d4d4;
-  --font-code: "JetBrains Mono", "monospace";
+  --font-code: "Space Grotesk", "monospace";
+}
+:root {
+  --header-bg: #ffffff;
+  --header-border: rgba(0, 0, 0, 0.12);
+  --header-text: #0b0b10;
+}
+
+html.dark {
+  --header-bg: rgba(0, 0, 0, 0.6);
+  --header-border: rgba(255, 255, 255, 0.16);
+  --header-text: #f2f2f6;
+}
+
+:root {
+  --bg: #f7f7fb;
+  --text: #0b0b10;
+  --hero-bg: #f7f7fb; /* hero background in light */
+  --hero-text: #0b0b10; /* hero text in light */
+
+  /* optional surfaces */
+  --surface: rgba(0, 0, 0, 0.04);
+  --border: rgba(0, 0, 0, 0.14);
+}
+
+html.dark {
+  --bg: #0a0a0f;
+  --text: #f2f2f6;
+
+  --surface: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.16);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background 300ms ease,
+    color 300ms ease;
+}
+:root {
+  --bg: #ffffff;
+  --text: #0b0b10;
+  --muted: #4b5563;
+  --surface: rgba(0, 0, 0, 0.04);
+  --border: rgba(0, 0, 0, 0.14);
+}
+
+html.dark {
+  --bg: #0a0a0f;
+  --text: #f2f2f6;
+  --muted: rgba(242, 242, 246, 0.75);
+  --surface: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.16);
 }
 
 @keyframes slideInRight {
@@ -123,4 +176,44 @@
 }
 .animate-skill-bar {
   animation: skill-bar 1s ease forwards;
+}
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--code-text);
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+  border-color: var(--color-amber-700);
+}
+
+.tech-card:focus {
+  border-color: var(--primary);
+}
+
+/* Active / toggled state */
+.tech-card.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* Icon color adjustment when active */
+.tech-card.active i {
+  filter: brightness(0) invert(1);
+}
+
+.tech-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  margin-top: 0.5rem; /* mt-2 */
 }
